@@ -7,8 +7,14 @@ def mostrar_home(request):
 
 def mostrar_servicio(request):
     datos = {
-        "nombre": "Lavado de vehículos",
-        "valor": 10000
+        "lav": "Lavado de vehículos:",
+        "valorlav": 10000,
+
+        "air": "Inflar ruedas: ",
+        "valorair": "sin costo",
+
+        "estacionamiento": "Estacionamiento",
+        "valorest": "300 minimo, 500 por minuto, 1000 por hora "
     }
     return render(request, 'about.html', datos)
 
